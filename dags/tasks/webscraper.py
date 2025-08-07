@@ -67,7 +67,7 @@ def scrape(page):
 
     for card in list_cards:
         l_name = card.find("span", attrs={"class": None}).text
-        l_count = int(card.find("div", attrs={"class": "count badge badge--subtle"}).text)
+        l_count = int(card.find("div", attrs={"class": "count badge badge--subtle badge--small"}).text)
 
         # We are only interested in Youth Program counts for our purposes. 
         # Update to fit your List(s) and use-case.
